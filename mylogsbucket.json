@@ -1,0 +1,17 @@
+{
+  "steps": [
+    {
+      "name": "gcr.io/cloud-builders/docker",
+      "args": [
+        "build",
+        "-t",
+        "us-east1-docker.pkg.dev/myproject/myimage",
+        "."
+      ]
+    }
+  ],
+  "logsBucket": "gs://mylogsbucket",
+  "options": {
+    "logging": "GCS_ONLY"
+  }
+}
