@@ -5,7 +5,7 @@ const url = 'https://react-test-tg-bot.web.app/'
 const bot = new Telegraf(token, {})
 
 bot.command('start', ctx => {
-    ctx.reply('Welcome to Telegraf1!',
+    ctx.reply('Welcome to Telegraf222!',
         Markup.inlineKeyboard([
             Markup.button.webApp('send message', url)
         ]))
