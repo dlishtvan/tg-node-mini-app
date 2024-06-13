@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(cors())
 
 bot.command('start', ctx => {
-    ctx.reply('Welcome to Telegraf222!',
+    ctx.reply('Welcome to Telegraf5!',
         Markup.inlineKeyboard([
             Markup.button.webApp('send message', url)
         ]))
