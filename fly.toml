@@ -15,4 +15,3 @@ app = "node ./main.js"
 NODE_ENV = "production"
 
 [build]
-builder = "heroku/buildpacks:20"
