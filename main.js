@@ -16,14 +16,16 @@ bot.on('message', async (msg) => {
     const text = msg.text;
 
     if(text === '/start') {
-        await bot.sendMessage(chatId, 'yo1', {
+        await bot.sendMessage(chatId, 'yo', {
             reply_markup: {
-                keyboard: [
+                inline_keyboard: [
                     [{text: 'click', web_app: {url: url + '/form'}}]
                 ]
             }
         })
     }
+
+    bot.sendMessage(chatId, `Received your message ${text}`);
 });
 
 const PORT = 8000;
