@@ -2,7 +2,7 @@ import TelegramBot from 'node-telegram-bot-api'
 import express from "express";
 import cors from "cors";
 
-const token = '7418620026:AAHHDANp6hg6iREZ-vtiPUiDld9Lb_X0c9c'
+const token = '6851790797:AAF5pWCYz5xyrZV9DICic8hI9gVGCBzzcZI'
 const url = 'https://react-test-tg-bot.web.app/'
 const bot = new TelegramBot(token, {polling: true});
 
@@ -16,10 +16,10 @@ bot.on('message', async (msg) => {
     const text = msg.text;
 
     if(text === '/start') {
-        await bot.sendMessage(chatId, 'qq', {
+        await bot.sendMessage(chatId, 'yo', {
             reply_markup: {
                 keyboard: [
-                    [{text: 'Заполнить форму', web_app: {url: url + '/form'}}]
+                    [{text: 'click', web_app: {url: url + '/form'}}]
                 ]
             }
         })
